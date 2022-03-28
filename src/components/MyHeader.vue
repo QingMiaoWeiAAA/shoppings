@@ -83,13 +83,13 @@ export default {
         path: "/shenghuo",
       });
     },
-  },
+  }
 };
 </script>
 
 <style scoped>
 #myheader {
-  margin-left: -3.75rem;
+  margin:0 auto;
   box-sizing: border-box;
   width: 7.5rem;
   font-size: 0.18rem;

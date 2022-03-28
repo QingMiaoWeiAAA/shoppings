@@ -72,7 +72,7 @@ export default {
       }
     },
     // 登录按钮
-  },
+  }
 };
 </script>
 <style scoped>

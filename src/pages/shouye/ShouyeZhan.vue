@@ -1,25 +1,26 @@
 <template>
   <div>
-      <MyHeader/>
-      <router-view/>
+    <MyHeader />
+    <router-view />
   </div>
 </template>
 
 <script>
-import MyHeader from '../../components/MyHeader.vue'
+import MyHeader from "../../components/MyHeader.vue";
 export default {
-    name:"jinrituijian",
-    components:{
-        MyHeader,
-    },
-    mounted() {
-        // this.$router.push({
-        //     path:"/tuijian"
-        // })
-    },
-}
+  name: "jinrituijian",
+  components: {
+    MyHeader,
+  },
+  mounted() {
+    if(localStorage.getItem('token')){
+      this.$router.push({
+        path:"/tuijian"
+      })
+    }
+  },
+};
 </script>
 
 <style scoped>
-
 </style>
